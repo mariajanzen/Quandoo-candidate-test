@@ -13,6 +13,7 @@
 .idea/
 out/
 debug/
+build/
 
 ## Plugin-specific files:
 
