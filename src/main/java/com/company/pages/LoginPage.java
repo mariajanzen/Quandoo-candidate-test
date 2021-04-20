@@ -12,7 +12,7 @@ public class LoginPage {
     public static String loginURL = PropertiesLoader.loadProperty("url") + "/login";
     private static String validUsername = PropertiesLoader.loadProperty("valid.username");
     private static String validPassword = PropertiesLoader.loadProperty("valid.password");
-    private static String secureURL = PropertiesLoader.loadProperty("url") +"/secure";
+    public static String secureURL = PropertiesLoader.loadProperty("url") +"/secure";
 
 
     private static String invalidUsername = "qwerty";
@@ -26,22 +26,24 @@ public class LoginPage {
     private static By pwdInput = By.id("password");
     private static By loginBtn = By.xpath("//*[@id=\"login\"]/button/i");
     private static By header = By.cssSelector("#content > div > h2"); //text "Login Page"
-    private static By secureSuccessfulHeader = By.xpath("//*[@id=\"flash\"]/text()"); //text " You logged into a secure area! "
-    private static By invalidUsernameMessage = By.xpath("//*[@id=\"flash\"]/text()"); //text " Your username is invalid! "
-    private static By invalidPasswordMessage = By.xpath("//*[@id=\"flash\"]/text()"); //text " Your password is invalid! "
+    private static By registrationHeader = By.id ("flash-messages"); //text " You logged into a secure area! "
 
-    public void validLoginInput() {
+    public static String invalidUsernameMessage = " Your username is invalid! ";
+    public static String invalidPasswordMessage = " Your password is invalid! ";
+
+
+    public void validUsernameInput() {
         $(usernameInput).setValue(validUsername);
+    }
+    public void validPwdInput() {
         $(pwdInput).setValue(validPassword);
     }
 
     public void invalidUserInput() {
         $(usernameInput).setValue(invalidUsername);
-        $(pwdInput).setValue(validPassword);
     }
 
     public void invalidPwdInput() {
-        $(usernameInput).setValue(validUsername);
         $(pwdInput).setValue(invalidPwd);
     }
 
@@ -50,12 +52,16 @@ public class LoginPage {
     }
 
     public SelenideElement secureAreaHeader() {
-        return $(secureSuccessfulHeader);
+        return $(registrationHeader);
 
     }
 
+    public SelenideElement errorUsernameMessage() {
+        return $(registrationHeader);
+    }
 
-
-
+    public SelenideElement errorPwdMessage() {
+        return $(registrationHeader);
+    }
 
 }
