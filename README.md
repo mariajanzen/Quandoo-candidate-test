@@ -39,4 +39,4 @@ cd Quandoo-candidate-test/
 
 mvn test
 
-If you have some questions, I would be glad to answer at maria_yantsen@yahoo.com
+If you have some questions, I am glad to answer at maria_yantsen@yahoo.com
