@@ -5,14 +5,16 @@ This is the web test automation project for testing. It was built using Java 8, 
 **Features**
 
 The project has three feature files which represent the following scenarios:
+
 1. Login:
 -Login with valid user credentials;
 -Login with wrong username and correct password;
 -Login with wrong password and correct username.
+
 2. Hover:
 -Hover over the profile pictures and verify, that displayed user information is according to the user.
-3.Sortable data table
-   ---
+   
+3. Sortable data table
 
 Feature files location:
 src/test/resources/com.company/
@@ -32,3 +34,5 @@ git clone https://github.com/mariajanzen/Quandoo-candidate-test.git
 cd Quandoo-candidate-test/
 
 mvn test
+
+If you have some questions, I would be glad to answer at maria_yantsen@yahoo.com
