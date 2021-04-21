@@ -1,7 +1,6 @@
 package com.company.steps;
 
 import com.company.pages.LoginPage;
-import com.company.pages.SecureArea;
 import io.cucumber.java8.En;
 
 import static com.codeborne.selenide.Selenide.open;
@@ -22,6 +21,10 @@ public class LoginSteps implements En {
 
         When("I insert valid password", () -> {
             loginPage.validPwdInput();
+        });
+
+        Then("I click on the login button", () -> {
+            loginPage.clickOnLoginBtn();
         });
 
         Then("I see correct SecureArea", () -> {

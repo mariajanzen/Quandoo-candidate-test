@@ -9,16 +9,14 @@ import static com.codeborne.selenide.Selenide.$;
 public class LoginPage {
 
     /* Properties */
+
     public static String loginURL = PropertiesLoader.loadProperty("url") + "/login";
     private static String validUsername = PropertiesLoader.loadProperty("valid.username");
     private static String validPassword = PropertiesLoader.loadProperty("valid.password");
     public static String secureURL = PropertiesLoader.loadProperty("url") +"/secure";
 
-
     private static String invalidUsername = "qwerty";
     private static String invalidPwd = "Qwerty!";
-
-
 
     /* Elements */
 

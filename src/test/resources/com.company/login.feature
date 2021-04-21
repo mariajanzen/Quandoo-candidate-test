@@ -6,16 +6,19 @@ Feature: Herokuapp Login Feature
     Given I am on the LoginPage
     When I insert valid username
     And I insert valid password
-    Then I see correct SecureArea
+    Then I click on the login button
+    And I see correct SecureArea
 
   Scenario: Invalid Username
     Given I am on the LoginPage
     When I insert invalid username
     And I insert valid password
-    Then I see error username message
+    Then I click on the login button
+    And I see error username message
 
   Scenario: Invalid Password
     Given I am on the LoginPage
     When I insert valid username
     And I insert invalid password
-    Then I see error password message
+    Then I click on the login button
+    And I see error password message
