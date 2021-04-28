@@ -1,6 +1,6 @@
 **web-automation**
 
-This is the web test automation project for testing. It was built using Java 8, Selenium 3, Cucumber and Selenide frameworks [http://selenide.org/index.html ].
+This is the web automation project for testing. It was built using Java 8, Selenium 3, Cucumber and Selenide frameworks [http://selenide.org/index.html ].
 
 **Features**
 
@@ -18,8 +18,8 @@ The project has three feature files which represent the following scenarios:
 
 -Hover over the profile pictures and verify, that displayed user information is according to the user.
    
-3. Sortable data table
-
+~~~~3. Sortable data table
+~~~~
 Feature files location:
 src/test/resources/com.company/
 

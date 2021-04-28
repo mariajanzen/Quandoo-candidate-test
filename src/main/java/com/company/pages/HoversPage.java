@@ -9,12 +9,11 @@ import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$$;
 
 public class HoversPage {
-    /* Properties */
 
+    /* Properties */
     public static String hoversURL = PropertiesLoader.loadProperty("url") + "/hovers";
 
     /* Elements */
-
     private static final By imgElement = By.tagName("img");
     private static final By textElement = By.tagName("h5");
 
