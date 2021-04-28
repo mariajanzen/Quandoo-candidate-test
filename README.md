@@ -17,9 +17,9 @@ The project has three feature files which represent the following scenarios:
 2. Hover:
 
 -Hover over the profile pictures and verify, that displayed user information is according to the user.
-   
-~~~~3. Sortable data table
-~~~~
+
+3. Sortable data table
+
 Feature files location:
 src/test/resources/com.company/
 
